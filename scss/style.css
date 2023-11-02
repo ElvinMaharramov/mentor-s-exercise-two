@@ -1,0 +1,68 @@
+.grid-container {
+  width: 100%;
+}
+.grid-container .all-img-boxes {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+.grid-container .all-img-boxes .item {
+  position: relative;
+}
+.grid-container .all-img-boxes .item .before-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c1001c;
+  opacity: 0;
+  z-index: 9;
+}
+.grid-container .all-img-boxes .item:hover .before-div::before {
+  transition: ease-in-out 0.4s;
+  opacity: 0.8;
+}
+.grid-container .all-img-boxes .item img {
+  width: 100%;
+  height: 100%;
+}
+.grid-container .all-img-boxes .item .content-div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.grid-container .all-img-boxes .item .content-div h3 {
+  color: #FFFFFF;
+  font-size: 30px;
+  position: absolute;
+  top: 25px;
+  left: 105px;
+}
+.grid-container .all-img-boxes .item .content-div h5 {
+  color: #FFFFFF;
+  position: absolute;
+  top: 90px;
+  left: 170px;
+}
+.grid-container .all-img-boxes .item .content-div button {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 160px;
+  left: 130px;
+  padding: 10px 20px;
+}
+.grid-container .all-img-boxes .item .content-div button:hover {
+  background-color: brown;
+}
+.grid-container .all-img-boxes .item .content-div button a {
+  text-decoration: none;
+  color: #000000;
+}
+.grid-container .all-img-boxes .item:hover .content-div {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
